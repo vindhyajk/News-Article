@@ -1,0 +1,22 @@
+.category-filter {
+    margin-bottom: 20px;
+}
+
+.category-filter button {
+    background: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.category-filter button:hover {
+    background: #e0e0e0;
+}
+
+.category-filter .active {
+    background: #007bff;
+    color: #fff;
+}
