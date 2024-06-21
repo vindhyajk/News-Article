@@ -34,6 +34,13 @@ const App = () => {
 
   useEffect(() => {
     fetchArticles();
+    fetch('https://dummyjson.com/products')
+      .then(res => res.json())
+      .then('dummy json products', console.log);
+
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log('placeholders todos', json))
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCategory, currentPage]);
   
