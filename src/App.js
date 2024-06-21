@@ -7,10 +7,10 @@ import Pagination from './components/Pagination';
 
 const API_KEY = '16607d4443594f1aa540e05bc3d8700e';
 const PAGE_SIZE = 5;
+const categories = ['Technology', 'Business', 'Sports', 'Health', 'Science', 'Entertainment'];
 
 const App = () => {
   const [articles, setArticles] = useState([]);
-  const [categories, setCategories] = useState(['Technology', 'Business', 'Sports', 'Health', 'Science', 'Entertainment']);
   const [selectedCategory, setSelectedCategory] = useState('technology');
   const [currentPage, setCurrentPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
