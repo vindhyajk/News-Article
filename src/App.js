@@ -34,7 +34,8 @@ const App = () => {
 
   useEffect(() => {
     fetchArticles();
-  }, [selectedCategory, currentPage, fetchArticles]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedCategory, currentPage]);
   
   return (
     <div className="app">
