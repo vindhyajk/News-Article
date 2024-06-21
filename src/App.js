@@ -15,10 +15,6 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
 
-  useEffect(() => {
-    fetchArticles();
-  }, [selectedCategory, currentPage, fetchArticles]);
-
   const fetchArticles = async () => {
     try {
       const response = await axios.get(`https://newsapi.org/v2/top-headlines`, {
@@ -36,6 +32,10 @@ const App = () => {
     }
   };
 
+  useEffect(() => {
+    fetchArticles();
+  }, [selectedCategory, currentPage, fetchArticles]);
+  
   return (
     <div className="app">
       <h1>News Articles</h1>
