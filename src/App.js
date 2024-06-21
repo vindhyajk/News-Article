@@ -17,7 +17,7 @@ const App = () => {
 
   useEffect(() => {
     fetchArticles();
-  }, [selectedCategory, currentPage]);
+  }, [selectedCategory, currentPage, fetchArticles]);
 
   const fetchArticles = async () => {
     try {
